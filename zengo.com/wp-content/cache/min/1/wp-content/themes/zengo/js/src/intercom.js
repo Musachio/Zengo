@@ -1,0 +1,2 @@
+function intercomAfterScroll(){const intercom=document.querySelector('.intercom-lightweight-app');if(intercom){const scrollValue=window.scrollY;const pxToScroll=250;if(scrollValue>pxToScroll){console.log(scrollValue);intercom.classList.add('show')}}}
+window.addEventListener('scroll',intercomAfterScroll);window.addEventListener('DOMContentLoaded',intercomAfterScroll)

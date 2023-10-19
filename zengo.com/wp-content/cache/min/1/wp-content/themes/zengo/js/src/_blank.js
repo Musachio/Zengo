@@ -1,0 +1,2 @@
+jQuery(document).ready(function($){$("a[href^=http]").each(function(){var excludes=['www.zengo.com','zengo.com'];for(i=0;i<excludes.length;i++){if(this.href.indexOf(excludes[i])!=-1){return!0}}
+if(this.href.indexOf(location.hostname)==-1){$(this).click(function(){return!0});$(this).attr({rel:"noopener",target:"_blank",title:"Opens in a new window"});$(this).click()}})})
